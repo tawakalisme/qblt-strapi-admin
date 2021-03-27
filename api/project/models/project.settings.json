@@ -1,32 +1,35 @@
 {
   "kind": "collectionType",
-  "collectionName": "portfolios",
+  "collectionName": "projects",
   "info": {
-    "name": "portfolio",
-    "description": ""
+    "name": "project"
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "attributes": {
     "title": {
       "type": "string"
     },
-    "category": {
-      "model": "category"
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
     },
     "description": {
       "type": "text"
     },
+    "category": {
+      "model": "category"
+    },
     "font": {
       "type": "string"
     },
-    "tools": {
+    "platform": {
       "type": "string"
     },
-    "platform": {
+    "tools": {
       "type": "string"
     },
     "cover": {
@@ -53,10 +56,6 @@
     },
     "dribbble": {
       "type": "string"
-    },
-    "slug": {
-      "type": "uid",
-      "targetField": "title"
     }
   }
 }
