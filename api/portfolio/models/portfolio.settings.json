@@ -56,7 +56,8 @@
     },
     "slug": {
       "type": "uid",
-      "targetField": "title"
+      "targetField": "title",
+      "unique": true
     }
   }
 }
