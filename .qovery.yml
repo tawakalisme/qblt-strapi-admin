@@ -1,0 +1,15 @@
+---
+application:
+  name: "qblt-strapi-admin"
+  project: "qblt-strapi-admin"
+  organization: "QoveryCommunity"
+databases:
+- type: "POSTGRESQL"
+  name: "qbltdb"
+  version: "12"
+routers:
+- name: "main-qblt-strapi-admin"
+  routes:
+  - application_name: "qblt-strapi-admin"
+    paths:
+    - "/*"
